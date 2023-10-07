@@ -10,16 +10,15 @@ namespace MarsSpecFlow20230817.Utilites
     [Binding]
     public sealed class Hooks : CommonDriver
     {
-        [BeforeScenario]
-        public void BeforeScenario()
+        [BeforeScenario]        
+        public void beforeScenario()
         {
             Initialize();
         }
-
         [AfterScenario]
         public void AfterScenario()
         {
-            driver.Close();
+            Close();
         }
     }
 }

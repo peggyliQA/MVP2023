@@ -28,7 +28,6 @@ namespace MarsSpecFlow20230817.Utilites
             {
                 wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.CssSelector(locatorValue)));
             }
-
         }
 
         public static void WaitToBeVisible(IWebDriver driver, string locator, string locatorValue, int seconds)
@@ -67,7 +66,6 @@ namespace MarsSpecFlow20230817.Utilites
             }
 
         }
-
     }
 }
 
